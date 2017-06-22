@@ -1,7 +1,18 @@
  var randomNumber = randomFn(0, 10)
- var guessedNum = prompt('The first guess: type your number!')
+ //var guessedNum = prompt('The first guess: type your number!')
  var isCorrect = false
  var gameOver = false
+
+// create a start game button
+var button = document.createElement("button")
+button.innerHTML = "Start Game"
+
+// append button to <h3>
+var buttonLocation = document.getElementsByTagName("h3")[0];
+buttonLocation.appendChild(button);
+
+// add button event listener
+button.addEventListener('click', startTheGame)
 
  // fn that generates randomNum
  // min and max always whole number

@@ -1,10 +1,41 @@
 body {
   background-color: rgb(142, 7, 35);
   color: white;
+  font-family: 'century gothic'
 }
 
 .container {
   width: 600px;
   margin: 0 auto;
   padding: 10px 10px;
+}
+
+button {
+  color: white;
+  border: 2px;
+  background-color: green;
+  border-color: green;
+  font-size: 100px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+button:hover {
+  color: black;
+  border: 2px;
+  background-color: white;
+  border-color: green;
+}
+
+h1 {
+  font-size: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+h4 {
+  font-size: 30px
 }
