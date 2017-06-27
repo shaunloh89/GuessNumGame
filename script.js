@@ -12,7 +12,21 @@
  buttonLocation.appendChild(button)
 
 // add button event listener
- button.addEventListener('click', startTheGame)
+ button.addEventListener("click", changeColor)
+
+ // change color when button is clicked
+ function changeColor () {
+   document.querySelector('body').style.backgroundColor = randomColor()
+ }
+
+function randomColor () {
+  var red = (Math.floor(Math.random() * (255 - 0 + 1) + 0))
+  var green = (Math.floor(Math.random() * (255 - 0 + 1) + 0))
+  var blue = (Math.floor(Math.random() * (255 - 0 + 1) + 0))
+  var randomColor = 'rgb(' + red + ',' + green + ',' + blue + ')'
+  console.log(randomColor)
+  return randomColor
+}
 
  // fn that generates randomNum
  // min and max always whole number
