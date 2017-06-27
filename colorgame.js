@@ -34,7 +34,7 @@ function labelChanger () {
 function stopGame () {
   clearInterval(colorTrigger)
   clearInterval(labelTrigger)
-  console.log(score)
+  label.innerHTML = 'Game Over. Your score is ' + score
 }
 
 // function colorChanger () {
@@ -58,7 +58,7 @@ startButton.addEventListener('click', function () {
 matchButton.addEventListener ('click', function () {
   if (backgroundArr === labelArr) {
     score += 1
-  } return score
+  }
 })
 
 //change background color
